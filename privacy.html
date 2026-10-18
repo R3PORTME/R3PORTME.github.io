@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — R3NOVATION Backup</title>
+  <style>body{max-width:48rem;margin:3rem auto;padding:0 1rem;font:1.05rem/1.65 system-ui,sans-serif;color:#202124;background:#fff}a{color:#1757aa}h1,h2{line-height:1.25}code{overflow-wrap:anywhere}</style>
+</head>
+<body>
+  <main>
+    <h1>Privacy policy — R3NOVATION Backup</h1>
+    <p>Effective date: 18 October 2026. Operator: R3PORTME. This policy describes a personal, single-user desktop rclone + restic backup setup and these two static information pages. It is not a service accepting other users' data.</p>
+    <h2>Google access and use of data</h2>
+    <p>The owner personally authorizes Google Drive OAuth. The current scope, <code>https://www.googleapis.com/auth/drive</code>, permits reading, creating, changing and deleting files across the authorized account, not just one folder. Configured backup operations use the owner's selected folder and explicitly selected backup inputs.</p>
+    <p>The local tools use Drive file/folder metadata, such as object names, identifiers, permissions and sizes, to locate the approved repository and perform transfers. Selected source bytes are read locally for backup; encrypted repository bytes are uploaded to Drive or downloaded for restoration and verification. Restic encrypts backup content locally before transfer. Drive still processes encrypted object storage and request metadata.</p>
+    <p>Google user data is used only for the owner's backup and restore functionality. This application does not sell it, use it for advertising, or use it to train AI or machine-learning models.</p>
+    <h2>Storage, sharing and retention</h2>
+    <p>OAuth tokens and the restic password remain in private local configuration files. The owner retains an independent recovery-password copy. This website and its public repository do not store those secrets, backup inputs, backup manifests or backup contents.</p>
+    <p>Encrypted backup objects are stored in the owner's selected Google Drive folder with its existing sharing permissions. People with access to that folder can access the encrypted objects; editors may delete, corrupt or roll them back. Encryption protects content confidentiality but does not prevent those actions. Local originals and recovery copies are preserved.</p>
+    <p>The configured workflow does not automatically prune or delete backups. Local configuration and backup objects remain until the owner separately removes them or the relevant storage provider applies its policies. The owner can stop the local backup job and revoke the application's Google access through Google Account settings. Revoking access does not delete stored backups; losing the recovery password can make encrypted contents unrecoverable.</p>
+    <h2>Information pages and contact</h2>
+    <p>These static pages contain no forms, scripts or analytics and set no application cookies. They do not handle Google sign-in or receive OAuth tokens or backup data. GitHub Pages hosts the pages and may process connection information, including IP addresses and request metadata, under GitHub's own policies.</p>
+    <p>For support or privacy questions, contact the operator through the public <a href="https://github.com/R3PORTME">R3PORTME GitHub profile</a>.</p>
+    <p><a href="https://r3portme.github.io/">R3NOVATION Backup homepage</a></p>
+  </main>
+</body>
+</html>

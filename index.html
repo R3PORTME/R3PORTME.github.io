@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R3NOVATION Backup</title>
+  <style>body{max-width:48rem;margin:3rem auto;padding:0 1rem;font:1.05rem/1.65 system-ui,sans-serif;color:#202124;background:#fff}a{color:#1757aa}h1,h2{line-height:1.25}code{overflow-wrap:anywhere}</style>
+</head>
+<body>
+  <main>
+    <h1>R3NOVATION Backup</h1>
+    <p>A personal, single-user desktop backup setup operated by R3PORTME. It uses rclone for Google Drive OAuth and transport, and restic for client-side encryption, versioned backups and verified restores. This is an information page, not a hosted backup service or a sign-in portal.</p>
+    <h2>Google Drive access</h2>
+    <p>The owner authorizes the desktop application directly with Google. Its current OAuth scope is <code>https://www.googleapis.com/auth/drive</code>: permission to read, create, change and delete files across the authorized Drive account. This permission is broader than one folder. The configured backup operations use an owner-selected folder; that configuration does not limit what the OAuth permission permits.</p>
+    <p>File and folder metadata are used to locate the selected repository and transfer its contents. Only owner-selected backup inputs are processed locally. Restic encrypts their contents before upload; Drive receives encrypted repository objects and their associated storage/request metadata.</p>
+    <h2>Storage and control</h2>
+    <p>OAuth tokens and the restic password are kept in private local files on the owner's computer. The owner separately retains a recovery-password copy. They are not stored on this website or in its public source repository.</p>
+    <p>The selected Drive folder is shared under the owner's existing settings. Other editors may delete, corrupt or roll back encrypted backup objects. Encryption does not prevent that, and local originals are retained.</p>
+    <p>These static pages have no forms, scripts, analytics or application-set cookies. They do not receive backup files or OAuth credentials. GitHub Pages provides the web hosting.</p>
+    <p><a href="https://r3portme.github.io/privacy.html">Privacy policy</a> · <a href="https://github.com/R3PORTME">Owner and support: R3PORTME</a></p>
+  </main>
+</body>
+</html>
